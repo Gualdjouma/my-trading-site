@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" href="images/idris trades.png" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="images/idris trades.png" alt="logo" /></a>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="contact.html">ASK ME</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="main">
+    <div class="about">
+
+
+      <div class="contact-me">
+        <form id="email" method="POST" action="contact.php">
+          <input name="name" type="text" class="form-control" placeholder="Enter Your Name" required />
+          <br />
+          <input name="email" type="email" class="form-control" placeholder="Type Your Email Address" required />
+          <br />
+          <input name="subject" type="text" class="form-control" placeholder="Subject" required />
+          <br />
+          <textarea name="message" class="form-control" placeholder="Type your message here" row="4"
+            required></textarea>
+          <br />
+          <input type="submit" class="form-control submit" value="SEND" />
+        </form>
+      </div>
+
+      <br />
+      <div class="icons">
+        <a href="https://twitter.com/idristrades" target="_blank">
+          <img src="images/tw.png" alt="idristrades" /></a>
+
+        <a href="#" target="_blank">
+          <img src="images/disc.png" alt="low float blvd" /></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="para">
+      <p>&copy; Prince Idris 2022</p>
+    </div>
+  </footer>
+</body>
+
+</html>

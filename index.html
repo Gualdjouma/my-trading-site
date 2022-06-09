@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Low Float Blvd</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" href="images/idris trades.png" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="images/idris trades.png" alt="logo" /></a>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="contact.html">ASK ME</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="news">
+    <div id="tape">softcapital</div>
+    <script src="https://softcapital.com/widget/widget.js"></script>
+    <style>
+      .sc-ticker-tape-item {
+        padding: 3px 8px;
+      }
+
+      .sc-ticker-tape {
+        background: linear-gradient(-45deg,
+            rgb(255, 255, 255),
+            rgba(250, 0, 0, 0.486),
+            rgba(56, 190, 15, 0.678),
+            rgba(25, 170, 222, 0.3));
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+      }
+
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0 50%;
+        }
+      }
+
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0 50%;
+        }
+      }
+
+      @keyframes Gradient {
+        0% {
+          background-position: 0 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0 50%;
+        }
+      }
+    </style>
+    <script>
+      createSoftCapitalWidget("TickerTape", "tape", {
+        symbols: "QQQ,SPY,DIA,TSLA,ALLK,SOBR,CELZ,MOBQ,COSM,APCX",
+        rows: 4, logo: false, speed: 12, mode: "chain", imgHeight: 12, newsHeight: 25, newsSpeed: 8, newsMode: "chain", newsDelay: 2
+      });
+    </script>
+
+  </div>
+
+  <div class="wrapper">
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview">
+      <div class="tradingview-widget"><a href="https://www.tradingview.com/symbols/AMEX-SPY/" rel="noopener"
+          target="_blank"><span class="blue-text"></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+        new TradingView.widget(
+          {
+            "autosize": true,
+            "symbol": "AMEX:SPY",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "8",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "studies": [
+              "MAExp@tv-basicstudies",
+              "MAWeighted@tv-basicstudies",
+              "RSI@tv-basicstudies",
+              "VWAP@tv-basicstudies"
+            ],
+            "container_id": "tradingview_32905"
+          }
+        );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <div class="twitter-feed">
+      <a class="twitter-timeline" data-width="400" data-height="400" data-theme="dark"
+        href="https://twitter.com/IdrisTrades?ref_src=twsrc%5Etfw"></a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+  </div>
+  <footer>
+    <div>
+      <p>&copy; Prince Idris 2022</p>
+    </div>
+
+    <div class="icons">
+      <a href="https://twitter.com/idristrades" target="_blank">
+        <img src="images/tw.png" width="15" height="15" alt="idristrades" /></a>
+    </div>
+
+  </footer>
+
+
+
+
+  <div class="sidebar">
+
+    <div class="child">
+      <h4>Highlights</h4>
+      <img src="images/high.png" alt="ipo">
+    </div>
+
+    <div class="child">
+      <h4>Pre-Market</h4>
+      <img src="images/pre.png" alt="ipo">
+    </div>
+
+    <div class="child">
+      <h4>Screeners</h4>
+      <img src="images/filter.png" alt="ipo">
+    </div>
+
+    <div class="child">
+      <h4>IPOs</h4>
+      <img src="images/ipo.png" alt="ipo">
+    </div>
+
+    <div class="child">
+      <h4>Challenges</h4>
+      <img src="images/challenge.png" alt="ipo">
+    </div>
+
+  </div>
+
+  <script>
+
+    window.addEventListener("load", () => {
+      load(".news", ".tradingview", ".twitter-feed")
+    })
+
+  </script>
+</body>
+
+</html>
