@@ -1,0 +1,46 @@
+.section .main {
+  max-width: 70%;
+}
+
+.premium {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+.prem-child {
+  color: black;
+  max-width: 380px;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: -0.1em -0.1em 0.3em rgba(247, 247, 247, 0.3),
+    0.1em 0.1em 0.3em rgba(247, 247, 247, 0.3);
+}
+
+.prem-child img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.prem-child p {
+  text-align: left;
+  padding: 0 30px;
+  font-size: 14px;
+}
+
+span {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.twt {
+  text-decoration: none;
+  font-size: small;
+  color: #00acee;
+  padding: 6px 8px;
+  border-radius: 30%;
+}
